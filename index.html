@@ -41,10 +41,14 @@
           </div> 
            <!-- button -->
            <div class="btns">
-              <button class="btn0">Book Now</button>
-              <div class="btn1"></div>
-               <div class="btn2"></div>
-              <button class="btn00">Listen</button>
+             <a href="booking.html">
+                      <button class=" button39">Book Now</button>
+             </a>
+          
+               <a href="#song">
+                   <button class=" button39">Listen</button>
+                </a>
+              
            </div>
             
          </div> 
@@ -135,7 +139,11 @@
             </div>
             </div>
             <div class="btn3">
-                 <button class="button">View All Dates</button>
+                <a href="upcoming.html">
+
+                    <button class="button6">View All Dates</button>
+                    
+                </a> 
             </div>
              
             </div>
@@ -143,7 +151,7 @@
         <!-- </div> -->
     <!------------- THIRD PAGE -------------------->  
 
-        <div class="page third">
+        <div class="page third" id="song">
             <div class="heading">
         <h1>Featured Track</h1>
         <div class="line"></div>
@@ -158,102 +166,109 @@
         <div class="track-box">
 
             <div class="music-card">
+                <img src="./assets/logo1.png" class="logo" id="cover">
 
-                <img src="./assets/logo1.png" class="logo">
-
-                <h2>DJ SONGS</h2>
-
-                <div class="preview">
-                    <button>Preview</button>
-                   <i class="fa-brands fa-spotify" style="color: rgb(3, 3, 3);font-size: 30px;"></i>
-                </div>
+         
+                
+                <h2 id="title"></h2>
+                   
+                 <audio id="audio"></audio>
 
                 <div class="player">
-                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-backward-step" id="prev" onclick="previousSong()"></i>
 
-                    <div class="play">
-                        <i class="fa-solid fa-play"></i>
+                    <div class="play"  onclick="playSong()">
+                        <i class="fa-solid fa-play" id="icon"></i>
                     </div>
 
-                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-forward-step" id="next" onclick="nextSong()"></i>
+
                 </div>
 
             </div>
 
             <div class="list">
 
-                <div class="song">
+                <div class="song1" onclick="selectSong(0)">
                     <div class="left1">
-                        <h3>1. Neon Night</h3>
+                        <h3 id="title">1.Aadi Pona Aavani</h3>
                         <p class="p1">Electro House, Futuristic & high tempo</p>
                     </div>
 
                     <div class="time">05:00</div>
                 </div>
 
-                <div class="song">
+                <div class="song1" onclick="selectSong(1)">
                     <div class="left1">
-                        <h3>2.Midnight Drop</h3>
+                        <h3>2.Aadungada Yennai Suthi</h3>
                         <p class="p1">Synthwave, Retro sci-fi groove</p>
                     </div>
 
                     <div class="time">02:30</div>
                 </div>
 
-                <div class="song">
+                <div class="song1" onclick="selectSong(2)">
                     <div class="left1">
-                        <h3>3. Chennai Afterparty</h3>
+                        <h3>3. Aasa Dosai</h3>
                         <p class="p1">Bass, Heavy drop, deep energy</p>
                     </div>
 
                     <div class="time">04:20</div>
                 </div>
 
-                <div class="song">
+                <div class="song1" onclick="selectSong(3)">
                     <div class="left1">
-                        <h3>4. Photon Drift</h3>
+                        <h3>4. Ah Mudhal Akku</h3>
                         <p class="p1">Trance, Euphoric & melodic</p>
                     </div>
 
                     <div class="time">07:00</div>
                 </div>
 
-                 <div class="song">
+                 <div class="song1" onclick="selectSong(4)">
                     <div class="left1">
-                        <h3>5. Vera Level Vibe</h3>
+                        <h3>5. Ambasamuthiram Ambani</h3>
                         <p class="p1">High-energy synths and festival-style drops.</p>
                     </div>
 
                     <div class="time">07:30</div>
                 </div>
 
-                 <div class="song">
+                 <div class="song1" onclick="selectSong(5)">
                     <div class="left1">
-                        <h3>6. Madras Beat Drop</h3>
+                        <h3>6. Andangkaka Kondakari</h3>
                         <p class="p1">Trance, Euphoric & melodic</p>
                     </div>
 
                     <div class="time">08:00</div>
                 </div>
-                 <div class="song">
+                 <div class="song1" onclick="selectSong(6)">
                     <div class="left1">
-                        <h3>7. Thara Beat Explosion</h3>
+                        <h3>7. Anegan</h3>
                         <p class="p1">Trance, Euphoric & melodic</p>
                     </div>
 
                     <div class="time">08:30</div>
                 </div>
-                 <div class="song">
+                 <div class="song1" onclick="selectSong(7)  ">
                     <div class="left1">
-                        <h3>8. Kuthu Pulse</h3>
+                        <h3 >8. Appadi Podu</h3>
                         <p class="p1">Trance, Euphoric & melodic</p>
                     </div>
 
                     <div class="time">09:00</div>
                 </div>
-                 <div class="song">
+                 <div class="song1" onclick="selectSong(8)">
                     <div class="left1">
-                        <h3>9. Festival Fever</h3>
+                        <h3>9. Bambara Knanaley</h3>
+                        <p class="p1">Trance, Euphoric & melodic</p>
+                    </div>
+
+                    <div class="time">09:30</div>
+                </div>
+                <div class="song1" onclick="selectSong(9)">
+                    <div class="left1">
+                        <h3>10. Beer Venuma</h3>
                         <p class="p1">Trance, Euphoric & melodic</p>
                     </div>
 
@@ -382,5 +397,6 @@
 </footer>
 
     </div>
+    <script src="./index.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 body {
     font-family: "Poppins", sans-serif;
@@ -122,9 +123,10 @@ a:hover {
     top:10px;
     margin-top: 20px;
     padding-bottom: 40px;
+   
 }
 
-.btn0, .btn00 {
+/* .btn0, .btn00 {
     background: #2b2b2b;
     color: white;
     width: 202px;
@@ -142,7 +144,7 @@ a:hover {
 
 .btn1, .btn2 {
     display: none;
-}
+} */
 
 .v1 {
     width: 100%;
@@ -152,6 +154,63 @@ a:hover {
     position: relative;
     left:25%;
     top:10px;
+}
+
+
+
+
+
+
+
+.button39 {
+    width: 160px;
+    height: 60px;
+    background-color: transparent;
+    color: #fffefe;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease-in, transform 0.3s ease;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0px 2px 6px rgba(4, 202, 220, 0.3);
+    border: 2px solid #b406ff;
+}
+.button39:before,
+.button39:after {
+    content: "";
+    position: absolute;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background-color: rgb(8, 23, 240);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+.button39:before {
+    top: 0;
+}
+.button39:after {
+    bottom: 0;
+}
+.button39:hover:before,
+.button39:hover:after {
+    opacity: 0.6;
+    transform: rotate(0deg);
+}
+  
+.button39:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.button39:active {
+    background-color: rgb(34, 34, 34);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+    transform: scale(0.98);
 }
 
 
@@ -248,21 +307,7 @@ table, td, tr {
     font-size: 22px;
     text-align: center;
 }
-.button {
-    background-color: rgb(9, 217, 224);
-    padding: 15px 80px;
-    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
-    border: 4px solid rgb(9, 240, 248);
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-.button:hover {
-    background-color: transparent;
-    color: rgb(9, 217, 224);
-}
+
 .top-li{
     display:flex;
     justify-content: space-between;
@@ -279,6 +324,48 @@ table, td, tr {
     left:-300px;
     top:5px;
 }
+
+.button6 {
+    width: 160px;
+    height: 50px;
+    position: relative;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: #7452ef;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+.button6:hover {
+    text-shadow: 0px 5px 10px rgba(148, 6, 250, 0.562);
+    transform: scale(1.01);
+    box-shadow: inset 0px 0px 10px rgb(232, 1, 248);
+    border: 3px solid rgb(0, 255, 242);
+   
+}
+.button6::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 50%;
+    height: 100%;
+    transform: rotate(80deg);
+    background-color: #f205ce77;
+    filter: blur(10px);
+    transition: 0.6s ease-in-out;
+   
+} 
+.button6:hover::after {
+    left: 100%;
+}
+
+
 
 /***************** third page *****************/
 .third {
@@ -372,7 +459,7 @@ table, td, tr {
 .music-card {
     width: 340px;
     min-height: 300px;
-    background: linear-gradient(135deg, #b84f4f, #5c3bb8);
+    background: linear-gradient(135deg, #050505, #5c3bb8);
     border-radius: 25px;
     padding: 25px;
     flex-shrink: 0;
@@ -382,40 +469,21 @@ table, td, tr {
     width: 105px;
     margin: auto;
     display: block;
+      margin-top: 10px;
 }
 
 .music-card h2 {
     font-size: 28px;
     text-align: center;
-    margin: 10px 0;
+   padding-top: 40px;
 }
 
-.preview {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 15px;
-}
-
-.preview button {
-    border: none;
-    background: #d9d0d0;
-    padding: 5px 15px;
-    border-radius: 5px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.preview p {
-    font-weight: 600;
-    color: #d0d0d0;
-}
 
 .player {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .player i {
@@ -455,7 +523,7 @@ table, td, tr {
     border-radius: 20px;
 }
 
-.song {
+.song1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
